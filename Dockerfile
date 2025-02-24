@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the JAR file into the container
-COPY spring-boot-hello-world/target/spring-boot-2-hello-world-1.0.2-SNAPSHOT.jar /app/myapp.jar
+COPY target/spring-boot-2-hello-world-1.0.2-SNAPSHOT.jar /app/myapp.jar
 
 # Expose the port (e.g., 8080) if your app is running a server
 EXPOSE 8080
